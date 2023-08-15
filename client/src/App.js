@@ -1,10 +1,20 @@
-import "./App.css";
+import Layout from "./components/Layout";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Authentication System</h1>
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Layout>
+              <h1>Hello</h1>
+            </Layout>
+          </>
+        }
+      />
+    </Routes>
   );
 }
 
